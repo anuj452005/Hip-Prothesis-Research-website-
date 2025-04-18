@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" />
+  
+  <!-- Pelvis outline -->
+  <path d="M400,100 C500,100 580,180 580,280 C580,380 500,450 400,450 C300,450 220,380 220,280 C220,180 300,100 400,100 Z" 
+        fill="#e6e6e6" stroke="#757575" stroke-width="2" opacity="0.5" />
+  
+  <!-- Acetabular cup (metal) -->
+  <path d="M400,280 C450,280 480,250 480,200 C480,150 450,120 400,120 C350,120 320,150 320,200 C320,250 350,280 400,280 Z" 
+        fill="#b0bec5" stroke="#546e7a" stroke-width="3" />
+  
+  <!-- Preserved femoral bone -->
+  <path d="M400,240 L380,300 L420,300 Z" fill="#ffecb3" stroke="#ffa000" stroke-width="2" />
+  <path d="M380,300 L350,500 L450,500 L420,300 Z" fill="#ffecb3" stroke="#ffa000" stroke-width="2" />
+  
+  <!-- Femoral head with metal cap -->
+  <circle cx="400" cy="200" r="40" fill="#ffecb3" stroke="#ffa000" stroke-width="1" opacity="0.7" />
+  <path d="M400,160 A40,40 0 0 1 440,200 A40,40 0 0 1 400,240 A40,40 0 0 1 360,200 A40,40 0 0 1 400,160 Z" 
+        fill="none" stroke="#90a4ae" stroke-width="6" />
+  
+  <!-- Labels -->
+  <text x="400" y="70" font-family="Arial" font-size="24" text-anchor="middle" fill="#3f51b5" font-weight="bold">Hip Resurfacing</text>
+  
+  <!-- Component Labels with Lines -->
+  <text x="550" y="180" font-family="Arial" font-size="14" text-anchor="start" fill="#000">Metal Acetabular Cup</text>
+  <line x1="540" y1="180" x2="480" y2="180" stroke="#000" stroke-width="1" />
+  
+  <text x="250" y="200" font-family="Arial" font-size="14" text-anchor="end" fill="#000">Metal Cap on Femoral Head</text>
+  <line x1="260" y1="200" x2="360" y2="200" stroke="#000" stroke-width="1" />
+  
+  <text x="250" y="270" font-family="Arial" font-size="14" text-anchor="end" fill="#000">Preserved Femoral Neck</text>
+  <line x1="260" y1="270" x2="380" y2="270" stroke="#000" stroke-width="1" />
+  
+  <text x="550" y="400" font-family="Arial" font-size="14" text-anchor="start" fill="#000">Preserved Femoral Bone</text>
+  <line x1="540" y1="400" x2="420" y2="400" stroke="#000" stroke-width="1" />
+  
+  <!-- Highlight preserved bone -->
+  <text x="600" y="320" font-family="Arial" font-size="16" text-anchor="middle" fill="#ffa000" font-weight="bold">Preserved Bone</text>
+  <text x="600" y="350" font-family="Arial" font-size="16" text-anchor="middle" fill="#546e7a" font-weight="bold">Metal Components</text>
+  
+  <!-- Description -->
+  <text x="400" y="550" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">
+    Preserves more femoral bone by reshaping the femoral head and capping it with metal
+  </text>
+</svg>

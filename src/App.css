@@ -1,0 +1,1262 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Fix for MUI components */
+.MuiBox-root {
+  width: 100%;
+}
+
+.MuiDrawer-paper {
+  width: 250px;
+}
+
+/* Home Page Styles */
+.home-page .hero-section {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #3f51b5 0%, #2196f3 100%);
+  color: white;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.home-page .glass-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem 3rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 800px;
+  width: 100%;
+}
+
+.home-page .glass-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-page .glass-container p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.home-page .content-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.home-page .card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.home-page .card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-page .card h2 {
+  color: #3f51b5;
+  margin-bottom: 1rem;
+}
+
+.home-page .card p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.home-page .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive adjustments for laptop screens */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .home-page .glass-container {
+    max-width: 700px;
+  }
+
+  .home-page .glass-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-page .card {
+    padding: 1.2rem;
+  }
+
+  .home-page .card h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Model Viewer Page Styles */
+.model-viewer-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.model-viewer-page h1 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.model-container {
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.sketchfab-embed-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.sketchfab-embed-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.annotations-section {
+  margin-top: 2rem;
+}
+
+.annotations-section h2 {
+  color: #3f51b5;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.annotation-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.annotation-item {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.annotation-item h3 {
+  color: #3f51b5;
+  margin-bottom: 0.75rem;
+}
+
+/* Responsive adjustments for laptop screens */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .annotation-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Materials Page Styles */
+.materials-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.materials-page h1 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.material-selector {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.material-selector h2 {
+  color: #3f51b5;
+  margin-bottom: 1rem;
+}
+
+.material-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.material-buttons button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.material-buttons button:hover {
+  background-color: #d0d0d0;
+}
+
+.material-buttons button.active {
+  background-color: #3f51b5;
+  color: white;
+  box-shadow: 0 2px 8px rgba(63, 81, 181, 0.3);
+}
+
+.material-details {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.material-details h2 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.material-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.properties-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.properties-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.properties-table td:first-child {
+  font-weight: bold;
+  width: 40%;
+  color: #555;
+}
+
+.material-description {
+  margin-bottom: 1.5rem;
+}
+
+.material-description h3 {
+  color: #3f51b5;
+  margin-bottom: 0.75rem;
+}
+
+.material-advantages-disadvantages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.advantages h3, .disadvantages h3 {
+  color: #3f51b5;
+  margin-bottom: 0.75rem;
+}
+
+.advantages ul, .disadvantages ul {
+  padding-left: 1.5rem;
+}
+
+.advantages li, .disadvantages li {
+  margin-bottom: 0.5rem;
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+  margin-top: 1rem;
+  background: white;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive adjustments for laptop screens */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .material-content {
+    grid-template-columns: 1fr;
+  }
+
+  .material-advantages-disadvantages {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .chart-container {
+    height: 250px;
+  }
+}
+
+/* Types Page Styles */
+.types-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.types-page h1 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.type-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.type-image {
+  height: 200px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-image {
+  color: #888;
+  font-style: italic;
+}
+
+.type-details {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.type-details h2 {
+  color: #3f51b5;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.type-details h3 {
+  color: #3f51b5;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.type-details ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.type-details li {
+  margin-bottom: 0.5rem;
+}
+
+.comparison-section {
+  margin-top: 3rem;
+}
+
+.comparison-section h2 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.comparison-table-container {
+  overflow-x: auto;
+  margin-top: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.comparison-table th {
+  background-color: #f5f5f5;
+  font-weight: 500;
+  color: #3f51b5;
+}
+
+/* Responsive adjustments for laptop screens */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .types-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .type-image {
+    height: 180px;
+  }
+}
+
+/* Manufacturing Page Styles */
+.manufacturing-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.manufacturing-page h1 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.process-selector {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.process-selector h2 {
+  color: #3f51b5;
+  margin-bottom: 1rem;
+}
+
+.process-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.process-buttons button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.process-buttons button:hover {
+  background-color: #d0d0d0;
+}
+
+.process-buttons button.active {
+  background-color: #3f51b5;
+  color: white;
+  box-shadow: 0 2px 8px rgba(63, 81, 181, 0.3);
+}
+
+.process-details {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.process-details h2 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.process-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.process-description {
+  margin-bottom: 1.5rem;
+}
+
+.process-description h3,
+.process-workflow h3,
+.process-pros-cons h3,
+.process-specifications h3 {
+  color: #3f51b5;
+  margin-bottom: 0.75rem;
+}
+
+.workflow-steps {
+  background: #f9f9f9;
+  border-radius: 5px;
+  padding: 1.5rem 1.5rem 1.5rem 3rem;
+  margin-top: 1rem;
+}
+
+.workflow-steps li {
+  margin-bottom: 0.75rem;
+}
+
+.process-pros-cons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.advantages ul, .disadvantages ul {
+  padding-left: 1.5rem;
+}
+
+.specifications-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: #f9f9f9;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.specifications-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.specifications-table td:first-child {
+  font-weight: bold;
+  width: 40%;
+  color: #555;
+}
+
+.comparison-section {
+  margin-top: 3rem;
+}
+
+.comparison-section h2 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Responsive adjustments for laptop screens */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .process-content {
+    grid-template-columns: 1fr;
+  }
+
+  .process-pros-cons {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Cost Analysis Page Styles */
+.cost-analysis-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.cost-analysis-page h1 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.cost-comparison-section {
+  margin-bottom: 3rem;
+}
+
+.cost-comparison-section h2 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.cost-comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cost-comparison-table th,
+.cost-comparison-table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.cost-comparison-table th {
+  background-color: #f5f5f5;
+  font-weight: 500;
+  color: #3f51b5;
+}
+
+.table-note {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.75rem;
+  font-style: italic;
+}
+
+.cost-calculator-section h2 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.calculator-container {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.calculator-inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.input-group select {
+  padding: 0.75rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: white;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.calculator-results {
+  text-align: center;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.calculator-results h3 {
+  color: #3f51b5;
+  margin-bottom: 1rem;
+}
+
+.cost-result {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3f51b5;
+  margin: 1rem 0;
+}
+
+.cost-disclaimer {
+  font-size: 0.875rem;
+  color: #666;
+  font-style: italic;
+}
+
+.cost-factors-section {
+  margin-top: 3rem;
+}
+
+.cost-factors-section h2 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.factors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.factor-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.factor-card h3 {
+  color: #3f51b5;
+  margin-bottom: 0.75rem;
+}
+
+/* Responsive adjustments for laptop screens */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .calculator-inputs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .factors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cost-result {
+    font-size: 2.2rem;
+  }
+}
+
+/* Fatigue Page Styles */
+.fatigue-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.fatigue-page h1 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.fatigue-concepts {
+  margin-bottom: 3rem;
+}
+
+.fatigue-concepts h2 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.concepts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.concept-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.concept-card h3 {
+  color: #3f51b5;
+  margin-bottom: 0.75rem;
+}
+
+.sn-curve-section {
+  margin-bottom: 3rem;
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.sn-curve-section h2 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.chart-container {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 1.5rem;
+}
+
+.chart-explanation {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.chart-explanation ul {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.chart-explanation li {
+  margin-bottom: 0.5rem;
+}
+
+.failure-modes {
+  margin-top: 3rem;
+}
+
+.failure-modes h2 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.failure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.failure-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.failure-card h3 {
+  color: #3f51b5;
+  margin-bottom: 1rem;
+  padding: 1.5rem 1.5rem 0;
+}
+
+.failure-content {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.failure-image {
+  height: 150px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.fatigue-testing {
+  margin-top: 3rem;
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.fatigue-testing h2 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.testing-content ul {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.testing-content li {
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments for laptop screens */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .concepts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .failure-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chart-container {
+    height: 350px;
+  }
+}
+
+/* Environmental Page Styles */
+.environmental-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.environmental-page h1 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.intro-section {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.materials-impact {
+  margin-bottom: 3rem;
+}
+
+.materials-impact h2 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.impact-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.impact-card h3 {
+  color: #3f51b5;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.impact-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin: 1rem 0;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.metric-value {
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+.metric-value.high {
+  color: #f44336;
+}
+
+.metric-value.medium {
+  color: #ff9800;
+}
+
+.metric-value.low {
+  color: #4caf50;
+}
+
+.impact-description {
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.manufacturing-impact {
+  margin-bottom: 3rem;
+}
+
+.manufacturing-impact h2 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.process-comparison {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+  overflow-x: auto;
+}
+
+.process-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.process-table th,
+.process-table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.process-table th {
+  background-color: #f5f5f5;
+  font-weight: 500;
+  color: #3f51b5;
+}
+
+.process-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.process-detail {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.process-detail h3 {
+  color: #3f51b5;
+  margin-bottom: 0.75rem;
+}
+
+.lifecycle-impact {
+  margin-bottom: 3rem;
+}
+
+.lifecycle-impact h2 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.lifecycle-diagram {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lifecycle-stages {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.lifecycle-stage {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.lifecycle-stage h3 {
+  color: #3f51b5;
+  margin-bottom: 0.75rem;
+}
+
+.sustainable-alternatives {
+  margin-top: 3rem;
+}
+
+.sustainable-alternatives h2 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.alternatives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.alternative-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.alternative-card h3 {
+  color: #3f51b5;
+  margin-bottom: 0.75rem;
+}
+
+/* Responsive adjustments for laptop screens */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lifecycle-stages {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .alternatives-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Footer Styles */
+.footer-link:hover {
+  color: #2563eb !important;
+}
+
+/* References Page Styles */
+.references-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.references-page h1 {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.references-container {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.reference-section {
+  margin-bottom: 2rem;
+}
+
+.reference-section h2 {
+  color: #3f51b5;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.reference-list {
+  padding-left: 1rem;
+}
+
+.reference-item {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.reference-item:last-child {
+  border-bottom: none;
+}
+
+.reference-text {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.reference-text a {
+  color: #3f51b5;
+  text-decoration: none;
+}
+
+.reference-text a:hover {
+  text-decoration: underline;
+}
+
+.citation-note {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  border-left: 4px solid #3f51b5;
+}
+
+.citation-note h3 {
+  color: #3f51b5;
+  margin-bottom: 0.75rem;
+}
+
+/* Responsive adjustments for laptop screens */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .references-container {
+    padding: 1.5rem;
+  }
+
+  .reference-text {
+    font-size: 0.9rem;
+  }
+}

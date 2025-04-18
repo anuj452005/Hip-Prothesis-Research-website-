@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440" height="800" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Improved background with gradient -->
+  <rect width="1440" height="800" fill="url(#paint0_linear)"/>
+  
+  <!-- Grid pattern with better contrast -->
+  <g opacity="0.15">
+    <path d="M0 100H1440" stroke="white" stroke-width="1"/>
+    <path d="M0 200H1440" stroke="white" stroke-width="1"/>
+    <path d="M0 300H1440" stroke="white" stroke-width="1"/>
+    <path d="M0 400H1440" stroke="white" stroke-width="1"/>
+    <path d="M0 500H1440" stroke="white" stroke-width="1"/>
+    <path d="M0 600H1440" stroke="white" stroke-width="1"/>
+    <path d="M0 700H1440" stroke="white" stroke-width="1"/>
+    
+    <path d="M100 0V800" stroke="white" stroke-width="1"/>
+    <path d="M200 0V800" stroke="white" stroke-width="1"/>
+    <path d="M300 0V800" stroke="white" stroke-width="1"/>
+    <path d="M400 0V800" stroke="white" stroke-width="1"/>
+    <path d="M500 0V800" stroke="white" stroke-width="1"/>
+    <path d="M600 0V800" stroke="white" stroke-width="1"/>
+    <path d="M700 0V800" stroke="white" stroke-width="1"/>
+    <path d="M800 0V800" stroke="white" stroke-width="1"/>
+    <path d="M900 0V800" stroke="white" stroke-width="1"/>
+    <path d="M1000 0V800" stroke="white" stroke-width="1"/>
+    <path d="M1100 0V800" stroke="white" stroke-width="1"/>
+    <path d="M1200 0V800" stroke="white" stroke-width="1"/>
+    <path d="M1300 0V800" stroke="white" stroke-width="1"/>
+    <path d="M1400 0V800" stroke="white" stroke-width="1"/>
+  </g>
+  
+  <!-- Concentric circles -->
+  <circle cx="720" cy="400" r="350" stroke="white" stroke-width="1" opacity="0.2"/>
+  <circle cx="720" cy="400" r="250" stroke="white" stroke-width="1" opacity="0.2"/>
+  <circle cx="720" cy="400" r="150" stroke="white" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Diagonal lines -->
+  <line x1="0" y1="0" x2="1440" y2="800" stroke="white" stroke-width="1" opacity="0.1"/>
+  <line x1="1440" y1="0" x2="0" y2="800" stroke="white" stroke-width="1" opacity="0.1"/>
+  
+  <!-- Accent elements -->
+  <circle cx="200" cy="200" r="8" fill="white" fill-opacity="0.3"/>
+  <circle cx="400" cy="300" r="8" fill="white" fill-opacity="0.3"/>
+  <circle cx="600" cy="400" r="8" fill="white" fill-opacity="0.3"/>
+  <circle cx="800" cy="500" r="8" fill="white" fill-opacity="0.3"/>
+  <circle cx="1000" cy="600" r="8" fill="white" fill-opacity="0.3"/>
+  <circle cx="1200" cy="700" r="8" fill="white" fill-opacity="0.3"/>
+  
+  <circle cx="300" cy="700" r="8" fill="white" fill-opacity="0.3"/>
+  <circle cx="500" cy="600" r="8" fill="white" fill-opacity="0.3"/>
+  <circle cx="700" cy="500" r="8" fill="white" fill-opacity="0.3"/>
+  <circle cx="900" cy="400" r="8" fill="white" fill-opacity="0.3"/>
+  <circle cx="1100" cy="300" r="8" fill="white" fill-opacity="0.3"/>
+  <circle cx="1300" cy="200" r="8" fill="white" fill-opacity="0.3"/>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="1440" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#4338CA"/>
+    </linearGradient>
+  </defs>
+</svg>

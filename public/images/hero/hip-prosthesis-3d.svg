@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="600" viewBox="0 0 500 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Improved Hip Prosthesis 3D Model -->
+
+  <!-- Background elements -->
+  <circle cx="250" cy="300" r="200" fill="white" fill-opacity="0.1"/>
+  <circle cx="250" cy="300" r="150" fill="white" fill-opacity="0.05"/>
+
+  <!-- Femoral stem -->
+  <path d="M250 300C250 300 260 350 260 400C260 450 250 500 250 550C250 580 240 590 230 590C220 590 210 580 210 550C210 500 200 450 200 400C200 350 210 300 210 300L250 300Z" fill="url(#stem_gradient)" stroke="white" stroke-width="2"/>
+
+  <!-- Femoral neck -->
+  <path d="M230 300C230 300 220 280 220 260C220 240 230 220 250 220C270 220 280 240 280 260C280 280 270 300 270 300L230 300Z" fill="url(#neck_gradient)" stroke="white" stroke-width="2"/>
+
+  <!-- Femoral head (ball) -->
+  <circle cx="250" cy="220" r="40" fill="url(#ball_gradient)" stroke="white" stroke-width="2"/>
+  <circle cx="250" cy="220" r="35" fill="transparent" stroke="white" stroke-width="1" stroke-opacity="0.5"/>
+
+  <!-- Acetabular cup -->
+  <path d="M250 180C290 180 320 200 320 220C320 240 290 260 250 260C210 260 180 240 180 220C180 200 210 180 250 180Z" fill="url(#cup_gradient)" stroke="white" stroke-width="2"/>
+  <ellipse cx="250" cy="220" rx="70" ry="40" fill="transparent" stroke="white" stroke-width="1" stroke-opacity="0.3"/>
+
+  <!-- Measurement lines -->
+  <line x1="330" y1="220" x2="380" y2="220" stroke="white" stroke-width="1" stroke-dasharray="4 2"/>
+  <line x1="330" y1="300" x2="380" y2="300" stroke="white" stroke-width="1" stroke-dasharray="4 2"/>
+  <line x1="330" y1="220" x2="330" y2="300" stroke="white" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="385" y="260" fill="white" font-family="Arial" font-size="12">80mm</text>
+
+  <line x1="250" y1="260" x2="250" y2="300" stroke="white" stroke-width="1" stroke-dasharray="4 2"/>
+  <line x1="250" y1="260" x2="280" y2="260" stroke="white" stroke-width="1" stroke-dasharray="4 2"/>
+  <line x1="250" y1="300" x2="280" y2="300" stroke="white" stroke-width="1" stroke-dasharray="4 2"/>
+  <line x1="280" y1="260" x2="280" y2="300" stroke="white" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="285" y="280" fill="white" font-family="Arial" font-size="12">40mm</text>
+
+  <!-- Labels -->
+  <text x="320" y="200" fill="white" font-family="Arial" font-size="14" font-weight="bold">Acetabular Cup</text>
+  <line x1="310" y1="200" x2="280" y2="220" stroke="white" stroke-width="1"/>
+
+  <text x="320" y="240" fill="white" font-family="Arial" font-size="14" font-weight="bold">Femoral Head</text>
+  <line x1="310" y1="240" x2="270" y2="220" stroke="white" stroke-width="1"/>
+
+  <text x="150" y="280" fill="white" font-family="Arial" font-size="14" font-weight="bold">Femoral Neck</text>
+  <line x1="170" y1="280" x2="220" y2="260" stroke="white" stroke-width="1"/>
+
+  <text x="150" y="400" fill="white" font-family="Arial" font-size="14" font-weight="bold">Femoral Stem</text>
+  <line x1="170" y1="400" x2="210" y2="400" stroke="white" stroke-width="1"/>
+
+  <!-- Material indicators -->
+  <circle cx="150" y="450" r="10" fill="#E0F2FE"/>
+  <text x="170" y="455" fill="white" font-family="Arial" font-size="14">Titanium Alloy</text>
+
+  <circle cx="150" y="480" r="10" fill="#FEF3C7"/>
+  <text x="170" y="485" fill="white" font-family="Arial" font-size="14">Ceramic</text>
+
+  <circle cx="150" y="510" r="10" fill="#E0E7FF"/>
+  <text x="170" y="515" fill="white" font-family="Arial" font-size="14">Polyethylene</text>
+
+  <!-- Title -->
+  <text x="250" y="100" fill="white" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">Hip Prosthesis Components</text>
+
+  <!-- Highlight effects -->
+  <circle cx="250" cy="220" r="45" stroke="white" stroke-width="1" stroke-opacity="0.5"/>
+  <circle cx="250" cy="220" r="50" stroke="white" stroke-width="1" stroke-opacity="0.3"/>
+
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="stem_gradient" x1="200" y1="300" x2="260" y2="590" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E0F2FE"/>
+      <stop offset="1" stop-color="#BAE6FD"/>
+    </linearGradient>
+
+    <linearGradient id="neck_gradient" x1="220" y1="220" x2="280" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E0F2FE"/>
+      <stop offset="1" stop-color="#BAE6FD"/>
+    </linearGradient>
+
+    <linearGradient id="ball_gradient" x1="210" y1="180" x2="290" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FEF3C7"/>
+      <stop offset="1" stop-color="#FDE68A"/>
+    </linearGradient>
+
+    <linearGradient id="cup_gradient" x1="180" y1="180" x2="320" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E0E7FF"/>
+      <stop offset="1" stop-color="#C7D2FE"/>
+    </linearGradient>
+  </defs>
+</svg>

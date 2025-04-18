@@ -1,0 +1,113 @@
+{
+  "baseCosts": {
+    "thr": {
+      "titanium": 3500,
+      "cobaltChromium": 3200,
+      "stainlessSteel": 2800,
+      "ceramic": 4200,
+      "polyethylene": 1200
+    },
+    "phr": {
+      "titanium": 2800,
+      "cobaltChromium": 2500,
+      "stainlessSteel": 2200,
+      "ceramic": 3500
+    },
+    "resurfacing": {
+      "cobaltChromium": 3800
+    }
+  },
+  "manufacturingMultipliers": {
+    "casting": 1.0,
+    "cnc": 1.4,
+    "forging": 1.2,
+    "printing": 1.6
+  },
+  "regionMultipliers": {
+    "northAmerica": 1.0,
+    "europe": 0.9,
+    "asia": 0.7,
+    "australia": 1.1,
+    "southAmerica": 0.8,
+    "africa": 0.75
+  },
+  "hospitalFees": {
+    "northAmerica": 5000,
+    "europe": 4500,
+    "asia": 3500,
+    "australia": 5500,
+    "southAmerica": 4000,
+    "africa": 3750
+  },
+  "surgeonFees": {
+    "northAmerica": 4500,
+    "europe": 4050,
+    "asia": 3150,
+    "australia": 4950,
+    "southAmerica": 3600,
+    "africa": 3375
+  },
+  "comparisonTable": [
+    {
+      "type": "Total Hip Replacement",
+      "material": "Titanium Alloy",
+      "manufacturing": "CNC Machining",
+      "componentCost": "$3,500 - $4,900",
+      "totalCost": "$13,000 - $18,000"
+    },
+    {
+      "type": "Total Hip Replacement",
+      "material": "Cobalt-Chromium",
+      "manufacturing": "Forging",
+      "componentCost": "$3,200 - $3,800",
+      "totalCost": "$12,500 - $16,500"
+    },
+    {
+      "type": "Total Hip Replacement",
+      "material": "Ceramic",
+      "manufacturing": "CNC Machining",
+      "componentCost": "$4,200 - $5,900",
+      "totalCost": "$14,000 - $19,000"
+    },
+    {
+      "type": "Partial Hip Replacement",
+      "material": "Stainless Steel",
+      "manufacturing": "Casting",
+      "componentCost": "$2,200 - $2,800",
+      "totalCost": "$11,000 - $14,000"
+    },
+    {
+      "type": "Hip Resurfacing",
+      "material": "Cobalt-Chromium",
+      "manufacturing": "Forging",
+      "componentCost": "$3,800 - $4,600",
+      "totalCost": "$13,000 - $17,000"
+    }
+  ],
+  "costFactors": [
+    {
+      "factor": "Material Selection",
+      "description": "Premium materials like ceramics and titanium alloys increase costs but may offer better longevity and performance."
+    },
+    {
+      "factor": "Manufacturing Process",
+      "description": "Advanced manufacturing techniques like CNC machining and 3D printing typically cost more than traditional casting methods."
+    },
+    {
+      "factor": "Prosthesis Design",
+      "description": "Custom or complex designs require additional engineering and manufacturing resources, increasing overall costs."
+    },
+    {
+      "factor": "Geographic Region",
+      "description": "Healthcare costs vary significantly by country and region due to differences in labor costs, regulations, and healthcare systems."
+    },
+    {
+      "factor": "Hospital & Surgeon Fees",
+      "description": "These typically represent the largest portion of the total cost and vary based on facility, surgeon experience, and location."
+    },
+    {
+      "factor": "Insurance Coverage",
+      "description": "Insurance policies may cover different percentages of the procedure cost, affecting out-of-pocket expenses for patients."
+    }
+  ]
+}

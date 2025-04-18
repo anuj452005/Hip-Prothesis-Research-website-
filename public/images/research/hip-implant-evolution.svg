@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="400px" viewBox="0 0 800 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Hip Implant Evolution</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="800" height="400" rx="8"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#F5F7FA" offset="0%"></stop>
+            <stop stop-color="#E4E7EB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Hip-Implant-Evolution" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="800" height="400"></rect>
+        <g id="Background">
+            <use fill="url(#linearGradient-3)" xlink:href="#path-1"></use>
+        </g>
+        <g id="Timeline" transform="translate(50.000000, 50.000000)">
+            <line x1="50" y1="150" x2="700" y2="150" id="Timeline-Line" stroke="#CCCCCC" stroke-width="4" stroke-linecap="round"></line>
+            
+            <!-- 1960s -->
+            <circle id="Point-1960s" fill="#3F51B5" cx="100" cy="150" r="10"></circle>
+            <text id="1960s" font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold" fill="#333333">
+                <tspan x="80" y="180">1960s</tspan>
+            </text>
+            <g id="Implant-1960s" transform="translate(60.000000, 50.000000)">
+                <rect id="Implant-Bg" fill="#FFFFFF" x="0" y="0" width="80" height="80" rx="4"></rect>
+                <path d="M40,10 L50,20 L50,70 L30,70 L30,20 L40,10 Z" id="Stem" fill="#CCCCCC"></path>
+                <circle id="Head" fill="#888888" cx="40" cy="15" r="10"></circle>
+                <text id="Metal" font-family="Arial-BoldMT, Arial" font-size="10" font-weight="bold" fill="#666666">
+                    <tspan x="25" y="45">Metal</tspan>
+                </text>
+            </g>
+            
+            <!-- 1980s -->
+            <circle id="Point-1980s" fill="#3F51B5" cx="250" cy="150" r="10"></circle>
+            <text id="1980s" font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold" fill="#333333">
+                <tspan x="230" y="180">1980s</tspan>
+            </text>
+            <g id="Implant-1980s" transform="translate(210.000000, 50.000000)">
+                <rect id="Implant-Bg" fill="#FFFFFF" x="0" y="0" width="80" height="80" rx="4"></rect>
+                <path d="M40,10 L50,20 L50,70 L30,70 L30,20 L40,10 Z" id="Stem" fill="#CCCCCC"></path>
+                <circle id="Head" fill="#E0E0E0" cx="40" cy="15" r="10"></circle>
+                <text id="Ceramic" font-family="Arial-BoldMT, Arial" font-size="10" font-weight="bold" fill="#666666">
+                    <tspan x="20" y="45">Ceramic</tspan>
+                </text>
+            </g>
+            
+            <!-- 2000s -->
+            <circle id="Point-2000s" fill="#3F51B5" cx="400" cy="150" r="10"></circle>
+            <text id="2000s" font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold" fill="#333333">
+                <tspan x="380" y="180">2000s</tspan>
+            </text>
+            <g id="Implant-2000s" transform="translate(360.000000, 50.000000)">
+                <rect id="Implant-Bg" fill="#FFFFFF" x="0" y="0" width="80" height="80" rx="4"></rect>
+                <path d="M40,10 L50,20 L50,70 L30,70 L30,20 L40,10 Z" id="Stem" fill="#A0A0A0"></path>
+                <circle id="Head" fill="#F0F0F0" cx="40" cy="15" r="10"></circle>
+                <text id="Titanium" font-family="Arial-BoldMT, Arial" font-size="10" font-weight="bold" fill="#666666">
+                    <tspan x="15" y="45">Titanium</tspan>
+                </text>
+            </g>
+            
+            <!-- 2020s -->
+            <circle id="Point-2020s" fill="#3F51B5" cx="550" cy="150" r="10"></circle>
+            <text id="2020s" font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold" fill="#333333">
+                <tspan x="530" y="180">2020s</tspan>
+            </text>
+            <g id="Implant-2020s" transform="translate(510.000000, 50.000000)">
+                <rect id="Implant-Bg" fill="#FFFFFF" x="0" y="0" width="80" height="80" rx="4"></rect>
+                <path d="M40,10 L50,20 L50,70 L30,70 L30,20 L40,10 Z" id="Stem" fill="#A0A0A0"></path>
+                <circle id="Head" fill="#F0F0F0" cx="40" cy="15" r="10"></circle>
+                <path d="M35,60 L45,60 L45,65 L35,65 Z" id="Sensor" fill="#3F51B5"></path>
+                <text id="Smart" font-family="Arial-BoldMT, Arial" font-size="10" font-weight="bold" fill="#666666">
+                    <tspan x="25" y="45">Smart</tspan>
+                </text>
+            </g>
+            
+            <!-- Future -->
+            <circle id="Point-Future" fill="#4CAF50" cx="700" cy="150" r="10"></circle>
+            <text id="Future" font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold" fill="#333333">
+                <tspan x="680" y="180">Future</tspan>
+            </text>
+            <g id="Implant-Future" transform="translate(660.000000, 50.000000)">
+                <rect id="Implant-Bg" fill="#FFFFFF" x="0" y="0" width="80" height="80" rx="4"></rect>
+                <path d="M40,10 L50,20 L50,70 L30,70 L30,20 L40,10 Z" id="Stem" fill="#A0FFA0" opacity="0.7"></path>
+                <circle id="Head" fill="#F0FFF0" cx="40" cy="15" r="10"></circle>
+                <text id="Bio" font-family="Arial-BoldMT, Arial" font-size="10" font-weight="bold" fill="#4CAF50">
+                    <tspan x="15" y="45">Bioactive</tspan>
+                </text>
+            </g>
+            
+            <text id="Title" font-family="Arial-BoldMT, Arial" font-size="18" font-weight="bold" fill="#333333">
+                <tspan x="250" y="250">Evolution of Hip Implant Technology</tspan>
+            </text>
+            <text id="Subtitle" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                <tspan x="150" y="280">From simple metal designs to smart, bioactive materials with integrated sensors</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

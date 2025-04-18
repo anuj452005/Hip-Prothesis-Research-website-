@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="400px" viewBox="0 0 800 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Research Statistics</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="800" height="400" rx="8"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#F5F7FA" offset="0%"></stop>
+            <stop stop-color="#E4E7EB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Research-Statistics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="800" height="400"></rect>
+        <g id="Background">
+            <use fill="url(#linearGradient-3)" xlink:href="#path-1"></use>
+        </g>
+        <g id="Stats" transform="translate(50.000000, 50.000000)">
+            <rect id="Stats-Background" fill="#FFFFFF" x="0" y="0" width="700" height="300" rx="4"></rect>
+            <text id="Title" font-family="Arial-BoldMT, Arial" font-size="18" font-weight="bold" fill="#333333">
+                <tspan x="200" y="30">Hip Prosthesis Research Statistics</tspan>
+            </text>
+            
+            <!-- Stat 1 -->
+            <g id="Stat-1" transform="translate(50.000000, 70.000000)">
+                <circle id="Circle-1" fill="#3F51B5" opacity="0.1" cx="50" cy="50" r="50"></circle>
+                <text id="Number-1" font-family="Arial-BoldMT, Arial" font-size="24" font-weight="bold" fill="#3F51B5">
+                    <tspan x="35" y="58">95%</tspan>
+                </text>
+                <text id="Label-1" font-family="Arial-BoldMT, Arial" font-size="12" font-weight="bold" fill="#333333" text-anchor="middle">
+                    <tspan x="50" y="120">10-Year</tspan>
+                    <tspan x="50" y="135">Survival Rate</tspan>
+                </text>
+            </g>
+            
+            <!-- Stat 2 -->
+            <g id="Stat-2" transform="translate(200.000000, 70.000000)">
+                <circle id="Circle-2" fill="#4CAF50" opacity="0.1" cx="50" cy="50" r="50"></circle>
+                <text id="Number-2" font-family="Arial-BoldMT, Arial" font-size="24" font-weight="bold" fill="#4CAF50">
+                    <tspan x="35" y="58">87%</tspan>
+                </text>
+                <text id="Label-2" font-family="Arial-BoldMT, Arial" font-size="12" font-weight="bold" fill="#333333" text-anchor="middle">
+                    <tspan x="50" y="120">20-Year</tspan>
+                    <tspan x="50" y="135">Survival Rate</tspan>
+                </text>
+            </g>
+            
+            <!-- Stat 3 -->
+            <g id="Stat-3" transform="translate(350.000000, 70.000000)">
+                <circle id="Circle-3" fill="#FF9800" opacity="0.1" cx="50" cy="50" r="50"></circle>
+                <text id="Number-3" font-family="Arial-BoldMT, Arial" font-size="24" font-weight="bold" fill="#FF9800">
+                    <tspan x="35" y="58">92%</tspan>
+                </text>
+                <text id="Label-3" font-family="Arial-BoldMT, Arial" font-size="12" font-weight="bold" fill="#333333" text-anchor="middle">
+                    <tspan x="50" y="120">Patient</tspan>
+                    <tspan x="50" y="135">Satisfaction</tspan>
+                </text>
+            </g>
+            
+            <!-- Stat 4 -->
+            <g id="Stat-4" transform="translate(500.000000, 70.000000)">
+                <circle id="Circle-4" fill="#9C27B0" opacity="0.1" cx="50" cy="50" r="50"></circle>
+                <text id="Number-4" font-family="Arial-BoldMT, Arial" font-size="24" font-weight="bold" fill="#9C27B0">
+                    <tspan x="35" y="58">5.2%</tspan>
+                </text>
+                <text id="Label-4" font-family="Arial-BoldMT, Arial" font-size="12" font-weight="bold" fill="#333333" text-anchor="middle">
+                    <tspan x="50" y="120">Revision</tspan>
+                    <tspan x="50" y="135">Rate</tspan>
+                </text>
+            </g>
+            
+            <!-- Citation -->
+            <text id="Citation" font-family="ArialMT, Arial" font-size="12" font-weight="normal" fill="#666666" text-anchor="middle">
+                <tspan x="350" y="220">Based on meta-analysis of 42 clinical studies with 15+ years follow-up</tspan>
+                <tspan x="350" y="240">Data represents modern ceramic and metal implants from 2000-2020</tspan>
+            </text>
+            
+            <!-- Source -->
+            <text id="Source" font-family="Arial-ItalicMT, Arial" font-size="10" font-weight="normal" font-style="italic" fill="#999999" text-anchor="middle">
+                <tspan x="350" y="280">Source: International Journal of Arthroplasty, 2023</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

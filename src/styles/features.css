@@ -1,0 +1,223 @@
+/* Enhanced Features Page Styling */
+
+.features-section {
+  padding: 4rem 0;
+  background: linear-gradient(180deg, rgba(245, 247, 250, 0.5) 0%, rgba(255, 255, 255, 0.8) 100%);
+}
+
+.features-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #1a365d;
+  letter-spacing: -0.5px;
+}
+
+.features-subheading {
+  text-align: center;
+  color: #4a5568;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-divider {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #3f51b5 0%, #8b5cf6 100%);
+  margin: 1.5rem auto 3rem;
+  border-radius: 2px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--feature-color-start), var(--feature-color-end));
+}
+
+.feature-card.model {
+  --feature-color-start: #3f51b5;
+  --feature-color-end: #2196f3;
+}
+
+.feature-card.research {
+  --feature-color-start: #8b5cf6;
+  --feature-color-end: #a78bfa;
+}
+
+.feature-card.materials {
+  --feature-color-start: #0ea5e9;
+  --feature-color-end: #38bdf8;
+}
+
+.feature-card.types {
+  --feature-color-start: #f59e0b;
+  --feature-color-end: #fbbf24;
+}
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(var(--feature-bg-color), 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-card.model .feature-icon {
+  --feature-bg-color: 63, 81, 181;
+}
+
+.feature-card.research .feature-icon {
+  --feature-bg-color: 139, 92, 246;
+}
+
+.feature-card.materials .feature-icon {
+  --feature-bg-color: 14, 165, 233;
+}
+
+.feature-card.types .feature-icon {
+  --feature-bg-color: 245, 158, 11;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #1a365d;
+}
+
+.feature-description {
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.feature-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--feature-color-start);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  margin-top: auto;
+}
+
+.feature-link:hover {
+  color: var(--feature-color-end);
+}
+
+.feature-link svg {
+  margin-left: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.feature-link:hover svg {
+  transform: translateX(3px);
+}
+
+.explore-more-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: #3f51b5;
+  border: 2px solid #3f51b5;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.explore-more-button:hover {
+  background-color: #3f51b5;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(63, 81, 181, 0.2);
+}
+
+.explore-more-button svg {
+  margin-left: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.explore-more-button:hover svg {
+  transform: translateX(3px);
+}
+
+.interactive-features {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.interactive-heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1a365d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.interactive-subheading {
+  color: #4a5568;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-heading {
+    font-size: 2rem;
+  }
+  
+  .interactive-heading {
+    font-size: 1.75rem;
+  }
+}

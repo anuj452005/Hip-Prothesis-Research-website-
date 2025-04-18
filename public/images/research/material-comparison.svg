@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="400px" viewBox="0 0 800 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Material Comparison</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="800" height="400" rx="8"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#F5F7FA" offset="0%"></stop>
+            <stop stop-color="#E4E7EB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Material-Comparison" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="800" height="400"></rect>
+        <g id="Background">
+            <use fill="url(#linearGradient-3)" xlink:href="#path-1"></use>
+        </g>
+        <g id="Chart" transform="translate(50.000000, 50.000000)">
+            <rect id="Chart-Background" fill="#FFFFFF" x="0" y="0" width="700" height="300" rx="4"></rect>
+            <text id="Title" font-family="Arial-BoldMT, Arial" font-size="18" font-weight="bold" fill="#333333">
+                <tspan x="200" y="30">Hip Prosthesis Material Comparison</tspan>
+            </text>
+            
+            <!-- Chart Axes -->
+            <line x1="100" y1="250" x2="650" y2="250" id="X-Axis" stroke="#CCCCCC" stroke-width="2"></line>
+            <line x1="100" y1="250" x2="100" y2="70" id="Y-Axis" stroke="#CCCCCC" stroke-width="2"></line>
+            
+            <!-- Y-Axis Labels -->
+            <text id="Y-Label" font-family="Arial-BoldMT, Arial" font-size="12" font-weight="bold" fill="#666666" transform="translate(30.000000, 160.000000) rotate(-90.000000) translate(-30.000000, -160.000000)">
+                <tspan x="0" y="164">Performance Score</tspan>
+            </text>
+            <text id="Y-10" font-family="ArialMT, Arial" font-size="10" font-weight="normal" fill="#666666">
+                <tspan x="85" y="70">10</tspan>
+            </text>
+            <text id="Y-8" font-family="ArialMT, Arial" font-size="10" font-weight="normal" fill="#666666">
+                <tspan x="85" y="106">8</tspan>
+            </text>
+            <text id="Y-6" font-family="ArialMT, Arial" font-size="10" font-weight="normal" fill="#666666">
+                <tspan x="85" y="142">6</tspan>
+            </text>
+            <text id="Y-4" font-family="ArialMT, Arial" font-size="10" font-weight="normal" fill="#666666">
+                <tspan x="85" y="178">4</tspan>
+            </text>
+            <text id="Y-2" font-family="ArialMT, Arial" font-size="10" font-weight="normal" fill="#666666">
+                <tspan x="85" y="214">2</tspan>
+            </text>
+            <text id="Y-0" font-family="ArialMT, Arial" font-size="10" font-weight="normal" fill="#666666">
+                <tspan x="85" y="250">0</tspan>
+            </text>
+            
+            <!-- Grid Lines -->
+            <line x1="100" y1="70" x2="650" y2="70" id="Grid-10" stroke="#EEEEEE" stroke-width="1"></line>
+            <line x1="100" y1="106" x2="650" y2="106" id="Grid-8" stroke="#EEEEEE" stroke-width="1"></line>
+            <line x1="100" y1="142" x2="650" y2="142" id="Grid-6" stroke="#EEEEEE" stroke-width="1"></line>
+            <line x1="100" y1="178" x2="650" y2="178" id="Grid-4" stroke="#EEEEEE" stroke-width="1"></line>
+            <line x1="100" y1="214" x2="650" y2="214" id="Grid-2" stroke="#EEEEEE" stroke-width="1"></line>
+            
+            <!-- Bars -->
+            <!-- Titanium -->
+            <g id="Titanium" transform="translate(150.000000, 70.000000)">
+                <rect id="Durability" fill="#3F51B5" x="0" y="36" width="30" height="144"></rect>
+                <rect id="Biocompatibility" fill="#4CAF50" x="40" y="0" width="30" height="180"></rect>
+                <rect id="Weight" fill="#FFC107" x="80" y="72" width="30" height="108"></rect>
+                <text id="Label" font-family="Arial-BoldMT, Arial" font-size="12" font-weight="bold" fill="#333333">
+                    <tspan x="25" y="200">Titanium</tspan>
+                </text>
+            </g>
+            
+            <!-- Ceramic -->
+            <g id="Ceramic" transform="translate(300.000000, 70.000000)">
+                <rect id="Durability" fill="#3F51B5" x="0" y="0" width="30" height="180"></rect>
+                <rect id="Biocompatibility" fill="#4CAF50" x="40" y="18" width="30" height="162"></rect>
+                <rect id="Weight" fill="#FFC107" x="80" y="36" width="30" height="144"></rect>
+                <text id="Label" font-family="Arial-BoldMT, Arial" font-size="12" font-weight="bold" fill="#333333">
+                    <tspan x="25" y="200">Ceramic</tspan>
+                </text>
+            </g>
+            
+            <!-- Cobalt-Chromium -->
+            <g id="Cobalt-Chromium" transform="translate(450.000000, 70.000000)">
+                <rect id="Durability" fill="#3F51B5" x="0" y="18" width="30" height="162"></rect>
+                <rect id="Biocompatibility" fill="#4CAF50" x="40" y="72" width="30" height="108"></rect>
+                <rect id="Weight" fill="#FFC107" x="80" y="90" width="30" height="90"></rect>
+                <text id="Label" font-family="Arial-BoldMT, Arial" font-size="12" font-weight="bold" fill="#333333">
+                    <tspan x="0" y="200">Cobalt-Chromium</tspan>
+                </text>
+            </g>
+            
+            <!-- Oxidized Zirconium -->
+            <g id="Oxidized-Zirconium" transform="translate(600.000000, 70.000000)">
+                <rect id="Durability" fill="#3F51B5" x="0" y="18" width="30" height="162"></rect>
+                <rect id="Biocompatibility" fill="#4CAF50" x="40" y="0" width="30" height="180"></rect>
+                <rect id="Weight" fill="#FFC107" x="80" y="54" width="30" height="126"></rect>
+                <text id="Label" font-family="Arial-BoldMT, Arial" font-size="12" font-weight="bold" fill="#333333">
+                    <tspan x="-5" y="200">Oxidized Zirconium</tspan>
+                </text>
+            </g>
+            
+            <!-- Legend -->
+            <rect id="Legend-Durability" fill="#3F51B5" x="250" y="270" width="15" height="15"></rect>
+            <text id="Legend-Durability-Label" font-family="ArialMT, Arial" font-size="12" font-weight="normal" fill="#666666">
+                <tspan x="270" y="283">Durability</tspan>
+            </text>
+            
+            <rect id="Legend-Biocompatibility" fill="#4CAF50" x="350" y="270" width="15" height="15"></rect>
+            <text id="Legend-Biocompatibility-Label" font-family="ArialMT, Arial" font-size="12" font-weight="normal" fill="#666666">
+                <tspan x="370" y="283">Biocompatibility</tspan>
+            </text>
+            
+            <rect id="Legend-Weight" fill="#FFC107" x="480" y="270" width="15" height="15"></rect>
+            <text id="Legend-Weight-Label" font-family="ArialMT, Arial" font-size="12" font-weight="normal" fill="#666666">
+                <tspan x="500" y="283">Weight (Lower is Better)</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

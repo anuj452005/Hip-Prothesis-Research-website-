@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="400px" viewBox="0 0 800 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Research Paper</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="800" height="400" rx="8"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#F5F7FA" offset="0%"></stop>
+            <stop stop-color="#E4E7EB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Research-Paper" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="800" height="400"></rect>
+        <g id="Background">
+            <use fill="url(#linearGradient-3)" xlink:href="#path-1"></use>
+        </g>
+        <g id="Paper" transform="translate(100.000000, 50.000000)">
+            <rect id="Paper-Background" fill="#FFFFFF" x="0" y="0" width="600" height="300" rx="4"></rect>
+            <rect id="Header" fill="#3F51B5" x="0" y="0" width="600" height="40" rx="4"></rect>
+            <text id="Journal-of-Biomechanics" font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold" fill="#FFFFFF">
+                <tspan x="20" y="25">Journal of Biomechanics and Materials Research</tspan>
+            </text>
+            <text id="Title" font-family="Arial-BoldMT, Arial" font-size="18" font-weight="bold" fill="#333333">
+                <tspan x="20" y="70">Advanced Ceramic Composites for Hip Prosthesis: A Comprehensive Review</tspan>
+            </text>
+            <text id="Authors" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#666666">
+                <tspan x="20" y="100">Smith J, Johnson A, Williams B, et al.</tspan>
+            </text>
+            <line x1="20" y1="120" x2="580" y2="120" id="Divider" stroke="#EEEEEE" stroke-width="2"></line>
+            <text id="Abstract" font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold" fill="#333333">
+                <tspan x="20" y="145">Abstract</tspan>
+            </text>
+            <text id="Abstract-Text" font-family="ArialMT, Arial" font-size="12" font-weight="normal" fill="#666666">
+                <tspan x="20" y="170">This comprehensive review examines the latest developments in ceramic composites</tspan>
+                <tspan x="20" y="190">for hip prosthesis applications. We analyze mechanical properties, biocompatibility,</tspan>
+                <tspan x="20" y="210">and clinical outcomes of various ceramic formulations, with particular focus on</tspan>
+                <tspan x="20" y="230">alumina-zirconia composites and silicon nitride-based materials. Long-term wear</tspan>
+                <tspan x="20" y="250">characteristics and survival rates are discussed in the context of modern</tspan>
+                <tspan x="20" y="270">manufacturing techniques and surface treatments.</tspan>
+            </text>
+            <rect id="DOI-Box" fill="#F5F7FA" x="20" y="290" width="300" height="20" rx="2"></rect>
+            <text id="DOI" font-family="ArialMT, Arial" font-size="10" font-weight="normal" fill="#3F51B5">
+                <tspan x="30" y="304">DOI: 10.1016/j.jbiomech.2023.04.012</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

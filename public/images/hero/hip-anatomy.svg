@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="500" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hip Anatomy Illustration -->
+  
+  <!-- Pelvis outline -->
+  <path d="M100 100C100 100 150 80 200 100C250 120 300 100 300 100C300 100 320 150 300 200C280 250 300 300 300 300C300 300 250 320 200 300C150 280 100 300 100 300C100 300 80 250 100 200C120 150 100 100 100 100Z" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+  
+  <!-- Hip joint socket -->
+  <circle cx="200" cy="200" r="40" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+  
+  <!-- Femur outline -->
+  <path d="M200 240C200 240 210 280 210 320C210 360 200 400 200 440C200 480 190 500 180 500C170 500 160 480 160 440C160 400 150 360 150 320C150 280 160 240 160 240L200 240Z" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+  
+  <!-- Hip joint ball -->
+  <circle cx="180" cy="200" r="30" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+  
+  <!-- Cartilage -->
+  <path d="M180 170C180 170 190 180 200 180C210 180 220 170 220 170" stroke="#3B82F6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M180 230C180 230 190 220 200 220C210 220 220 230 220 230" stroke="#3B82F6" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Labels -->
+  <text x="250" y="180" fill="#64748B" font-family="Arial" font-size="12">Acetabulum</text>
+  <line x1="240" y1="180" x2="220" y2="190" stroke="#64748B" stroke-width="1"/>
+  
+  <text x="250" y="220" fill="#64748B" font-family="Arial" font-size="12">Femoral Head</text>
+  <line x1="240" y1="220" x2="200" y2="200" stroke="#64748B" stroke-width="1"/>
+  
+  <text x="250" y="260" fill="#64748B" font-family="Arial" font-size="12">Femoral Neck</text>
+  <line x1="240" y1="260" x2="200" y2="240" stroke="#64748B" stroke-width="1"/>
+  
+  <text x="100" y="150" fill="#64748B" font-family="Arial" font-size="12">Ilium</text>
+  <line x1="120" y1="150" x2="140" y2="130" stroke="#64748B" stroke-width="1"/>
+  
+  <text x="250" y="300" fill="#64748B" font-family="Arial" font-size="12">Femur</text>
+  <line x1="240" y1="300" x2="200" y2="320" stroke="#64748B" stroke-width="1"/>
+  
+  <!-- Highlight areas -->
+  <circle cx="180" cy="200" r="35" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 2"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="50" cy="50" r="20" fill="#3B82F6" fill-opacity="0.1"/>
+  <circle cx="350" cy="450" r="20" fill="#8B5CF6" fill-opacity="0.1"/>
+</svg>

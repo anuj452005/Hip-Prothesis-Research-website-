@@ -1,0 +1,842 @@
+{
+  "materials": [
+    {
+      "id": "titanium",
+      "name": "Titanium Alloy",
+      "properties": {
+        "durability": 0.9,
+        "biocompatibility": 0.95,
+        "weight": 0.8,
+        "corrosionResistance": 0.92,
+        "elasticModulus": 0.7,
+        "wearResistance": 0.85,
+        "costFactor": 0.75
+      },
+      "suitability": {
+        "youngPatients": 0.9,
+        "elderlyPatients": 0.8,
+        "activeLifestyle": 0.85,
+        "sedentaryLifestyle": 0.75,
+        "goodBoneQuality": 0.8,
+        "poorBoneQuality": 0.7,
+        "allergies": 0.9
+      },
+      "outcomes": {
+        "averageLifespan": 18,
+        "complicationRate": 0.05,
+        "revisionRate": 0.08,
+        "patientSatisfaction": 0.88
+      }
+    },
+    {
+      "id": "cobaltChrome",
+      "name": "Cobalt-Chromium",
+      "properties": {
+        "durability": 0.95,
+        "biocompatibility": 0.85,
+        "weight": 0.7,
+        "corrosionResistance": 0.88,
+        "elasticModulus": 0.6,
+        "wearResistance": 0.9,
+        "costFactor": 0.7
+      },
+      "suitability": {
+        "youngPatients": 0.85,
+        "elderlyPatients": 0.9,
+        "activeLifestyle": 0.9,
+        "sedentaryLifestyle": 0.8,
+        "goodBoneQuality": 0.85,
+        "poorBoneQuality": 0.75,
+        "allergies": 0.7
+      },
+      "outcomes": {
+        "averageLifespan": 20,
+        "complicationRate": 0.06,
+        "revisionRate": 0.07,
+        "patientSatisfaction": 0.86
+      }
+    },
+    {
+      "id": "ceramic",
+      "name": "Ceramic",
+      "properties": {
+        "durability": 0.8,
+        "biocompatibility": 0.9,
+        "weight": 0.9,
+        "corrosionResistance": 0.95,
+        "elasticModulus": 0.5,
+        "wearResistance": 0.95,
+        "costFactor": 0.6
+      },
+      "suitability": {
+        "youngPatients": 0.95,
+        "elderlyPatients": 0.7,
+        "activeLifestyle": 0.8,
+        "sedentaryLifestyle": 0.9,
+        "goodBoneQuality": 0.9,
+        "poorBoneQuality": 0.6,
+        "allergies": 0.95
+      },
+      "outcomes": {
+        "averageLifespan": 22,
+        "complicationRate": 0.04,
+        "revisionRate": 0.09,
+        "patientSatisfaction": 0.9
+      }
+    },
+    {
+      "id": "polyethylene",
+      "name": "Polyethylene",
+      "properties": {
+        "durability": 0.75,
+        "biocompatibility": 0.8,
+        "weight": 0.95,
+        "corrosionResistance": 0.85,
+        "elasticModulus": 0.9,
+        "wearResistance": 0.7,
+        "costFactor": 0.9
+      },
+      "suitability": {
+        "youngPatients": 0.7,
+        "elderlyPatients": 0.85,
+        "activeLifestyle": 0.65,
+        "sedentaryLifestyle": 0.85,
+        "goodBoneQuality": 0.75,
+        "poorBoneQuality": 0.8,
+        "allergies": 0.85
+      },
+      "outcomes": {
+        "averageLifespan": 15,
+        "complicationRate": 0.08,
+        "revisionRate": 0.12,
+        "patientSatisfaction": 0.82
+      }
+    },
+    {
+      "id": "stainless",
+      "name": "Stainless Steel",
+      "properties": {
+        "durability": 0.85,
+        "biocompatibility": 0.75,
+        "weight": 0.6,
+        "corrosionResistance": 0.8,
+        "elasticModulus": 0.65,
+        "wearResistance": 0.8,
+        "costFactor": 0.85
+      },
+      "suitability": {
+        "youngPatients": 0.75,
+        "elderlyPatients": 0.8,
+        "activeLifestyle": 0.75,
+        "sedentaryLifestyle": 0.8,
+        "goodBoneQuality": 0.8,
+        "poorBoneQuality": 0.7,
+        "allergies": 0.65
+      },
+      "outcomes": {
+        "averageLifespan": 16,
+        "complicationRate": 0.07,
+        "revisionRate": 0.1,
+        "patientSatisfaction": 0.8
+      }
+    },
+    {
+      "id": "oxinium",
+      "name": "Oxidized Zirconium",
+      "properties": {
+        "durability": 0.88,
+        "biocompatibility": 0.92,
+        "weight": 0.85,
+        "corrosionResistance": 0.9,
+        "elasticModulus": 0.75,
+        "wearResistance": 0.92,
+        "costFactor": 0.65
+      },
+      "suitability": {
+        "youngPatients": 0.92,
+        "elderlyPatients": 0.85,
+        "activeLifestyle": 0.9,
+        "sedentaryLifestyle": 0.85,
+        "goodBoneQuality": 0.88,
+        "poorBoneQuality": 0.8,
+        "allergies": 0.9
+      },
+      "outcomes": {
+        "averageLifespan": 21,
+        "complicationRate": 0.04,
+        "revisionRate": 0.06,
+        "patientSatisfaction": 0.92
+      }
+    }
+  ],
+  "fixationMethods": [
+    {
+      "id": "cemented",
+      "name": "Cemented",
+      "properties": {
+        "initialStability": 0.9,
+        "longTermStability": 0.75,
+        "revisionEase": 0.7,
+        "bonePreservation": 0.65,
+        "costFactor": 0.8
+      },
+      "suitability": {
+        "youngPatients": 0.6,
+        "elderlyPatients": 0.9,
+        "activeLifestyle": 0.7,
+        "sedentaryLifestyle": 0.9,
+        "goodBoneQuality": 0.75,
+        "poorBoneQuality": 0.9,
+        "previousSurgery": 0.8
+      },
+      "outcomes": {
+        "averageLifespan": 15,
+        "complicationRate": 0.06,
+        "revisionRate": 0.09,
+        "patientSatisfaction": 0.85
+      }
+    },
+    {
+      "id": "cementless",
+      "name": "Cementless",
+      "properties": {
+        "initialStability": 0.75,
+        "longTermStability": 0.9,
+        "revisionEase": 0.8,
+        "bonePreservation": 0.85,
+        "costFactor": 0.75
+      },
+      "suitability": {
+        "youngPatients": 0.9,
+        "elderlyPatients": 0.7,
+        "activeLifestyle": 0.85,
+        "sedentaryLifestyle": 0.75,
+        "goodBoneQuality": 0.9,
+        "poorBoneQuality": 0.6,
+        "previousSurgery": 0.75
+      },
+      "outcomes": {
+        "averageLifespan": 18,
+        "complicationRate": 0.05,
+        "revisionRate": 0.08,
+        "patientSatisfaction": 0.88
+      }
+    },
+    {
+      "id": "hybrid",
+      "name": "Hybrid",
+      "properties": {
+        "initialStability": 0.85,
+        "longTermStability": 0.85,
+        "revisionEase": 0.75,
+        "bonePreservation": 0.8,
+        "costFactor": 0.7
+      },
+      "suitability": {
+        "youngPatients": 0.8,
+        "elderlyPatients": 0.85,
+        "activeLifestyle": 0.8,
+        "sedentaryLifestyle": 0.85,
+        "goodBoneQuality": 0.85,
+        "poorBoneQuality": 0.8,
+        "previousSurgery": 0.85
+      },
+      "outcomes": {
+        "averageLifespan": 17,
+        "complicationRate": 0.055,
+        "revisionRate": 0.085,
+        "patientSatisfaction": 0.87
+      }
+    },
+    {
+      "id": "pressfit",
+      "name": "Press-Fit",
+      "properties": {
+        "initialStability": 0.8,
+        "longTermStability": 0.88,
+        "revisionEase": 0.85,
+        "bonePreservation": 0.9,
+        "costFactor": 0.72
+      },
+      "suitability": {
+        "youngPatients": 0.88,
+        "elderlyPatients": 0.75,
+        "activeLifestyle": 0.88,
+        "sedentaryLifestyle": 0.8,
+        "goodBoneQuality": 0.95,
+        "poorBoneQuality": 0.65,
+        "previousSurgery": 0.7
+      },
+      "outcomes": {
+        "averageLifespan": 19,
+        "complicationRate": 0.045,
+        "revisionRate": 0.075,
+        "patientSatisfaction": 0.89
+      }
+    }
+  ],
+  "trainingData": [
+    {
+      "patientProfile": {
+        "age": 45,
+        "weight": 75,
+        "height": 175,
+        "activityLevel": 8,
+        "boneQuality": "good",
+        "previousSurgery": "no",
+        "medicalConditions": {},
+        "medications": {},
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "ceramic",
+      "recommendedFixation": "cementless"
+    },
+    {
+      "patientProfile": {
+        "age": 78,
+        "weight": 68,
+        "height": 168,
+        "activityLevel": 3,
+        "boneQuality": "poor",
+        "previousSurgery": "no",
+        "medicalConditions": {
+          "osteoporosis": true
+        },
+        "medications": {},
+        "smokingStatus": "former-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "cobaltChrome",
+      "recommendedFixation": "cemented"
+    },
+    {
+      "patientProfile": {
+        "age": 62,
+        "weight": 85,
+        "height": 180,
+        "activityLevel": 5,
+        "boneQuality": "moderate",
+        "previousSurgery": "no",
+        "medicalConditions": {
+          "arthritis": true
+        },
+        "medications": {},
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "titanium",
+      "recommendedFixation": "hybrid"
+    },
+    {
+      "patientProfile": {
+        "age": 55,
+        "weight": 95,
+        "height": 182,
+        "activityLevel": 6,
+        "boneQuality": "good",
+        "previousSurgery": "yes",
+        "medicalConditions": {},
+        "medications": {},
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "cobaltChrome",
+      "recommendedFixation": "cementless"
+    },
+    {
+      "patientProfile": {
+        "age": 72,
+        "weight": 65,
+        "height": 165,
+        "activityLevel": 4,
+        "boneQuality": "poor",
+        "previousSurgery": "yes",
+        "medicalConditions": {
+          "osteoporosis": true,
+          "diabetes": true
+        },
+        "medications": {
+          "anticoagulants": true
+        },
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "polyethylene",
+      "recommendedFixation": "cemented"
+    },
+    {
+      "patientProfile": {
+        "age": 48,
+        "weight": 80,
+        "height": 178,
+        "activityLevel": 9,
+        "boneQuality": "good",
+        "previousSurgery": "no",
+        "medicalConditions": {},
+        "medications": {},
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "oxinium",
+      "recommendedFixation": "pressfit"
+    },
+    {
+      "patientProfile": {
+        "age": 65,
+        "weight": 72,
+        "height": 170,
+        "activityLevel": 5,
+        "boneQuality": "moderate",
+        "previousSurgery": "no",
+        "medicalConditions": {
+          "heartDisease": true
+        },
+        "medications": {
+          "anticoagulants": true
+        },
+        "smokingStatus": "former-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "titanium",
+      "recommendedFixation": "hybrid"
+    },
+    {
+      "patientProfile": {
+        "age": 58,
+        "weight": 88,
+        "height": 175,
+        "activityLevel": 7,
+        "boneQuality": "good",
+        "previousSurgery": "no",
+        "medicalConditions": {},
+        "medications": {},
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "oxinium",
+      "recommendedFixation": "cementless"
+    },
+    {
+      "patientProfile": {
+        "age": 75,
+        "weight": 70,
+        "height": 168,
+        "activityLevel": 3,
+        "boneQuality": "poor",
+        "previousSurgery": "yes",
+        "medicalConditions": {
+          "osteoporosis": true,
+          "arthritis": true
+        },
+        "medications": {
+          "corticosteroids": true
+        },
+        "smokingStatus": "former-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "stainless",
+      "recommendedFixation": "cemented"
+    },
+    {
+      "patientProfile": {
+        "age": 52,
+        "weight": 78,
+        "height": 176,
+        "activityLevel": 6,
+        "boneQuality": "moderate",
+        "previousSurgery": "no",
+        "medicalConditions": {},
+        "medications": {},
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "titanium",
+      "recommendedFixation": "pressfit"
+    },
+    {
+      "patientProfile": {
+        "age": 68,
+        "weight": 82,
+        "height": 172,
+        "activityLevel": 4,
+        "boneQuality": "moderate",
+        "previousSurgery": "yes",
+        "medicalConditions": {
+          "diabetes": true
+        },
+        "medications": {},
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "cobaltChrome",
+      "recommendedFixation": "hybrid"
+    },
+    {
+      "patientProfile": {
+        "age": 42,
+        "weight": 70,
+        "height": 173,
+        "activityLevel": 9,
+        "boneQuality": "good",
+        "previousSurgery": "no",
+        "medicalConditions": {},
+        "medications": {},
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "ceramic",
+      "recommendedFixation": "cementless"
+    },
+    {
+      "patientProfile": {
+        "age": 80,
+        "weight": 65,
+        "height": 165,
+        "activityLevel": 2,
+        "boneQuality": "poor",
+        "previousSurgery": "no",
+        "medicalConditions": {
+          "osteoporosis": true,
+          "heartDisease": true
+        },
+        "medications": {
+          "anticoagulants": true
+        },
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "polyethylene",
+      "recommendedFixation": "cemented"
+    },
+    {
+      "patientProfile": {
+        "age": 60,
+        "weight": 90,
+        "height": 180,
+        "activityLevel": 5,
+        "boneQuality": "good",
+        "previousSurgery": "no",
+        "medicalConditions": {},
+        "medications": {},
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "titanium",
+      "recommendedFixation": "hybrid"
+    },
+    {
+      "patientProfile": {
+        "age": 50,
+        "weight": 75,
+        "height": 175,
+        "activityLevel": 7,
+        "boneQuality": "good",
+        "previousSurgery": "no",
+        "medicalConditions": {},
+        "medications": {},
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "oxinium",
+      "recommendedFixation": "pressfit"
+    },
+    {
+      "patientProfile": {
+        "age": 35,
+        "weight": 68,
+        "height": 170,
+        "activityLevel": 9,
+        "boneQuality": "good",
+        "previousSurgery": "no",
+        "medicalConditions": {},
+        "medications": {},
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "ceramic",
+      "recommendedFixation": "cementless"
+    },
+    {
+      "patientProfile": {
+        "age": 82,
+        "weight": 62,
+        "height": 160,
+        "activityLevel": 2,
+        "boneQuality": "poor",
+        "previousSurgery": "no",
+        "medicalConditions": {
+          "osteoporosis": true
+        },
+        "medications": {
+          "corticosteroids": true
+        },
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "polyethylene",
+      "recommendedFixation": "cemented"
+    },
+    {
+      "patientProfile": {
+        "age": 56,
+        "weight": 85,
+        "height": 178,
+        "activityLevel": 6,
+        "boneQuality": "moderate",
+        "previousSurgery": "no",
+        "medicalConditions": {
+          "diabetes": true
+        },
+        "medications": {},
+        "smokingStatus": "current-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "titanium",
+      "recommendedFixation": "cemented"
+    },
+    {
+      "patientProfile": {
+        "age": 63,
+        "weight": 78,
+        "height": 172,
+        "activityLevel": 5,
+        "boneQuality": "moderate",
+        "previousSurgery": "no",
+        "medicalConditions": {
+          "arthritis": true
+        },
+        "medications": {
+          "nsaids": true
+        },
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "cobaltChrome",
+      "recommendedFixation": "hybrid"
+    },
+    {
+      "patientProfile": {
+        "age": 45,
+        "weight": 92,
+        "height": 185,
+        "activityLevel": 7,
+        "boneQuality": "good",
+        "previousSurgery": "no",
+        "medicalConditions": {},
+        "medications": {},
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "oxinium",
+      "recommendedFixation": "cementless"
+    },
+    {
+      "patientProfile": {
+        "age": 70,
+        "weight": 75,
+        "height": 170,
+        "activityLevel": 4,
+        "boneQuality": "moderate",
+        "previousSurgery": "yes",
+        "medicalConditions": {
+          "heartDisease": true
+        },
+        "medications": {
+          "anticoagulants": true
+        },
+        "smokingStatus": "former-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "titanium",
+      "recommendedFixation": "hybrid"
+    },
+    {
+      "patientProfile": {
+        "age": 38,
+        "weight": 72,
+        "height": 175,
+        "activityLevel": 8,
+        "boneQuality": "good",
+        "previousSurgery": "no",
+        "medicalConditions": {},
+        "medications": {},
+        "smokingStatus": "non-smoker",
+        "allergies": {
+          "metal": true
+        }
+      },
+      "recommendedMaterial": "ceramic",
+      "recommendedFixation": "cementless"
+    },
+    {
+      "patientProfile": {
+        "age": 75,
+        "weight": 68,
+        "height": 165,
+        "activityLevel": 3,
+        "boneQuality": "poor",
+        "previousSurgery": "no",
+        "medicalConditions": {
+          "osteoporosis": true,
+          "immunodeficiency": true
+        },
+        "medications": {
+          "immunosuppressants": true
+        },
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "ceramic",
+      "recommendedFixation": "cemented"
+    },
+    {
+      "patientProfile": {
+        "age": 52,
+        "weight": 95,
+        "height": 180,
+        "activityLevel": 5,
+        "boneQuality": "good",
+        "previousSurgery": "no",
+        "medicalConditions": {
+          "diabetes": true
+        },
+        "medications": {},
+        "smokingStatus": "current-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "cobaltChrome",
+      "recommendedFixation": "cemented"
+    },
+    {
+      "patientProfile": {
+        "age": 65,
+        "weight": 80,
+        "height": 175,
+        "activityLevel": 4,
+        "boneQuality": "moderate",
+        "previousSurgery": "yes",
+        "medicalConditions": {
+          "arthritis": true
+        },
+        "medications": {
+          "nsaids": true
+        },
+        "smokingStatus": "former-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "titanium",
+      "recommendedFixation": "hybrid"
+    },
+    {
+      "patientProfile": {
+        "age": 48,
+        "weight": 70,
+        "height": 168,
+        "activityLevel": 7,
+        "boneQuality": "good",
+        "previousSurgery": "no",
+        "medicalConditions": {},
+        "medications": {},
+        "smokingStatus": "non-smoker",
+        "allergies": {
+          "metal": true
+        }
+      },
+      "recommendedMaterial": "ceramic",
+      "recommendedFixation": "cementless"
+    },
+    {
+      "patientProfile": {
+        "age": 78,
+        "weight": 65,
+        "height": 162,
+        "activityLevel": 2,
+        "boneQuality": "poor",
+        "previousSurgery": "yes",
+        "medicalConditions": {
+          "osteoporosis": true,
+          "heartDisease": true
+        },
+        "medications": {
+          "anticoagulants": true,
+          "corticosteroids": true
+        },
+        "smokingStatus": "former-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "polyethylene",
+      "recommendedFixation": "cemented"
+    },
+    {
+      "patientProfile": {
+        "age": 55,
+        "weight": 82,
+        "height": 178,
+        "activityLevel": 6,
+        "boneQuality": "good",
+        "previousSurgery": "no",
+        "medicalConditions": {},
+        "medications": {},
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "oxinium",
+      "recommendedFixation": "pressfit"
+    },
+    {
+      "patientProfile": {
+        "age": 72,
+        "weight": 70,
+        "height": 170,
+        "activityLevel": 3,
+        "boneQuality": "moderate",
+        "previousSurgery": "no",
+        "medicalConditions": {
+          "arthritis": true
+        },
+        "medications": {
+          "nsaids": true
+        },
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "cobaltChrome",
+      "recommendedFixation": "hybrid"
+    },
+    {
+      "patientProfile": {
+        "age": 40,
+        "weight": 75,
+        "height": 175,
+        "activityLevel": 8,
+        "boneQuality": "good",
+        "previousSurgery": "no",
+        "medicalConditions": {},
+        "medications": {},
+        "smokingStatus": "non-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "ceramic",
+      "recommendedFixation": "cementless"
+    },
+    {
+      "patientProfile": {
+        "age": 68,
+        "weight": 85,
+        "height": 175,
+        "activityLevel": 4,
+        "boneQuality": "moderate",
+        "previousSurgery": "no",
+        "medicalConditions": {
+          "diabetes": true
+        },
+        "medications": {},
+        "smokingStatus": "former-smoker",
+        "allergies": {}
+      },
+      "recommendedMaterial": "titanium",
+      "recommendedFixation": "hybrid"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" />
+  
+  <!-- Pelvis outline -->
+  <path d="M400,100 C500,100 580,180 580,280 C580,380 500,450 400,450 C300,450 220,380 220,280 C220,180 300,100 400,100 Z" 
+        fill="#e6e6e6" stroke="#757575" stroke-width="2" />
+  
+  <!-- Natural acetabulum (socket) -->
+  <path d="M400,280 C450,280 480,250 480,200 C480,150 450,120 400,120 C350,120 320,150 320,200 C320,250 350,280 400,280 Z" 
+        fill="#ffcdd2" stroke="#b71c1c" stroke-width="2" />
+  
+  <!-- Femoral head (ball) -->
+  <circle cx="400" cy="200" r="40" fill="#90a4ae" stroke="#546e7a" stroke-width="2" />
+  
+  <!-- Femoral neck -->
+  <path d="M400,240 L380,300 L420,300 Z" fill="#90a4ae" stroke="#546e7a" stroke-width="2" />
+  
+  <!-- Femoral stem -->
+  <path d="M380,300 L350,500 L450,500 L420,300 Z" fill="#90a4ae" stroke="#546e7a" stroke-width="2" />
+  
+  <!-- Labels -->
+  <text x="400" y="70" font-family="Arial" font-size="24" text-anchor="middle" fill="#3f51b5" font-weight="bold">Partial Hip Replacement (PHR)</text>
+  
+  <!-- Component Labels with Lines -->
+  <text x="550" y="180" font-family="Arial" font-size="14" text-anchor="start" fill="#000">Natural Acetabulum (Socket)</text>
+  <line x1="540" y1="180" x2="480" y2="180" stroke="#000" stroke-width="1" />
+  
+  <text x="250" y="200" font-family="Arial" font-size="14" text-anchor="end" fill="#000">Prosthetic Femoral Head (Ball)</text>
+  <line x1="260" y1="200" x2="360" y2="200" stroke="#000" stroke-width="1" />
+  
+  <text x="250" y="270" font-family="Arial" font-size="14" text-anchor="end" fill="#000">Femoral Neck</text>
+  <line x1="260" y1="270" x2="400" y2="270" stroke="#000" stroke-width="1" />
+  
+  <text x="550" y="400" font-family="Arial" font-size="14" text-anchor="start" fill="#000">Femoral Stem</text>
+  <line x1="540" y1="400" x2="420" y2="400" stroke="#000" stroke-width="1" />
+  
+  <!-- Highlight natural vs prosthetic -->
+  <text x="600" y="250" font-family="Arial" font-size="16" text-anchor="middle" fill="#b71c1c" font-weight="bold">Natural Tissue</text>
+  <text x="600" y="350" font-family="Arial" font-size="16" text-anchor="middle" fill="#546e7a" font-weight="bold">Prosthetic Components</text>
+  
+  <!-- Description -->
+  <text x="400" y="550" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">
+    Replaces only the femoral head (ball) while retaining the natural acetabulum (socket)
+  </text>
+</svg>

@@ -1,0 +1,274 @@
+import React, { useState } from 'react';
+
+const ManufacturingPage = () => {
+  const [selectedProcess, setSelectedProcess] = useState('casting');
+
+  const manufacturingProcesses = {
+    casting: {
+      name: 'Casting',
+      description: 'Casting involves melting the metal alloy and pouring it into a mold that has the shape of the desired component. For hip prostheses, investment casting (lost-wax process) is commonly used.',
+      steps: [
+        'Create a wax model of the prosthesis component',
+        'Coat the wax model with ceramic material to create a shell',
+        'Melt out the wax, leaving a hollow ceramic mold',
+        'Pour molten metal into the mold',
+        'Allow metal to solidify and cool',
+        'Break ceramic shell to retrieve the cast component',
+        'Perform finishing operations (machining, polishing)'
+      ],
+      advantages: [
+        'Complex geometries possible',
+        'Good dimensional accuracy',
+        'Cost-effective for medium to large production runs',
+        'Suitable for various alloys'
+      ],
+      disadvantages: [
+        'Potential for porosity',
+        'Limited surface finish quality',
+        'May require extensive post-processing',
+        'Lower mechanical properties than forged components'
+      ],
+      precision: 'Medium to High (±0.1-0.3mm)',
+      cost: 'Medium',
+      materials: 'Cobalt-chromium alloys, stainless steel, titanium alloys'
+    },
+    cnc: {
+      name: 'CNC Machining',
+      description: 'Computer Numerical Control (CNC) machining uses computerized controls to remove material from a solid block to create the desired shape. This subtractive manufacturing process offers high precision.',
+      steps: [
+        'Create 3D CAD model of the component',
+        'Generate toolpaths using CAM software',
+        'Set up CNC machine with appropriate tools',
+        'Secure raw material block in the machine',
+        'Execute machining operations (milling, turning, drilling)',
+        'Perform finishing operations (polishing, deburring)',
+        'Inspect for dimensional accuracy'
+      ],
+      advantages: [
+        'Excellent dimensional accuracy',
+        'Superior surface finish',
+        'High repeatability',
+        'Minimal material defects',
+        'Suitable for small production runs'
+      ],
+      disadvantages: [
+        'High material waste',
+        'Limited geometric complexity',
+        'Higher cost for large production volumes',
+        'Longer production time'
+      ],
+      precision: 'Very High (±0.01-0.05mm)',
+      cost: 'High',
+      materials: 'Titanium alloys, cobalt-chromium alloys, stainless steel, ceramics'
+    },
+    forging: {
+      name: 'Forging',
+      description: 'Forging involves shaping metal by applying compressive forces using hammers or presses. This process improves the mechanical properties of the material by aligning the grain structure.',
+      steps: [
+        'Heat metal billet to forging temperature',
+        'Place heated metal between dies with the desired shape',
+        'Apply pressure to form the metal into the die cavity',
+        'Cool and remove the forged component',
+        'Perform trimming to remove excess material',
+        'Conduct heat treatment to achieve desired properties',
+        'Perform finishing operations (machining, polishing)'
+      ],
+      advantages: [
+        'Superior mechanical properties',
+        'Improved fatigue resistance',
+        'Enhanced grain structure',
+        'Better strength-to-weight ratio',
+        'Reduced internal defects'
+      ],
+      disadvantages: [
+        'Limited geometric complexity',
+        'Higher tooling costs',
+        'Requires secondary machining',
+        'Size limitations'
+      ],
+      precision: 'Medium (±0.2-0.5mm)',
+      cost: 'Medium to High',
+      materials: 'Titanium alloys, cobalt-chromium alloys, stainless steel'
+    },
+    printing: {
+      name: '3D Printing (Additive Manufacturing)',
+      description: 'Additive manufacturing builds components layer by layer based on a digital model. For metal hip prostheses, techniques like Selective Laser Melting (SLM) or Electron Beam Melting (EBM) are used.',
+      steps: [
+        'Create detailed 3D CAD model',
+        'Prepare model for printing (orientation, supports)',
+        'Load metal powder into the 3D printer',
+        'Print the component layer by layer using laser or electron beam',
+        'Remove the component from the build platform',
+        'Remove support structures',
+        'Perform post-processing (heat treatment, machining, polishing)'
+      ],
+      advantages: [
+        'Complex geometries and internal structures possible',
+        'Customization for patient-specific implants',
+        'Reduced material waste',
+        'Ability to create porous structures for bone ingrowth',
+        'Rapid prototyping capabilities'
+      ],
+      disadvantages: [
+        'Higher surface roughness',
+        'Potential for internal defects',
+        'Size limitations',
+        'Higher cost for large components',
+        'Requires extensive post-processing'
+      ],
+      precision: 'High (±0.05-0.2mm)',
+      cost: 'High (decreasing with technology advancement)',
+      materials: 'Titanium alloys, cobalt-chromium alloys, stainless steel'
+    }
+  };
+
+  return (
+    <div className="manufacturing-page">
+      <h1>Manufacturing Processes</h1>
+      
+      <div className="process-selector">
+        <h2>Select Manufacturing Process</h2>
+        <div className="process-buttons">
+          <button 
+            className={selectedProcess === 'casting' ? 'active' : ''} 
+            onClick={() => setSelectedProcess('casting')}
+          >
+            Casting
+          </button>
+          <button 
+            className={selectedProcess === 'cnc' ? 'active' : ''} 
+            onClick={() => setSelectedProcess('cnc')}
+          >
+            CNC Machining
+          </button>
+          <button 
+            className={selectedProcess === 'forging' ? 'active' : ''} 
+            onClick={() => setSelectedProcess('forging')}
+          >
+            Forging
+          </button>
+          <button 
+            className={selectedProcess === 'printing' ? 'active' : ''} 
+            onClick={() => setSelectedProcess('printing')}
+          >
+            3D Printing
+          </button>
+        </div>
+      </div>
+      
+      <div className="process-details">
+        <h2>{manufacturingProcesses[selectedProcess].name}</h2>
+        
+        <div className="process-content">
+          <div className="process-description">
+            <h3>Description</h3>
+            <p>{manufacturingProcesses[selectedProcess].description}</p>
+          </div>
+          
+          <div className="process-workflow">
+            <h3>Manufacturing Workflow</h3>
+            <ol className="workflow-steps">
+              {manufacturingProcesses[selectedProcess].steps.map((step, index) => (
+                <li key={index}>{step}</li>
+              ))}
+            </ol>
+          </div>
+          
+          <div className="process-pros-cons">
+            <div className="advantages">
+              <h3>Advantages</h3>
+              <ul>
+                {manufacturingProcesses[selectedProcess].advantages.map((advantage, index) => (
+                  <li key={index}>{advantage}</li>
+                ))}
+              </ul>
+            </div>
+            
+            <div className="disadvantages">
+              <h3>Disadvantages</h3>
+              <ul>
+                {manufacturingProcesses[selectedProcess].disadvantages.map((disadvantage, index) => (
+                  <li key={index}>{disadvantage}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          
+          <div className="process-specifications">
+            <h3>Specifications</h3>
+            <table className="specifications-table">
+              <tbody>
+                <tr>
+                  <td>Precision</td>
+                  <td>{manufacturingProcesses[selectedProcess].precision}</td>
+                </tr>
+                <tr>
+                  <td>Relative Cost</td>
+                  <td>{manufacturingProcesses[selectedProcess].cost}</td>
+                </tr>
+                <tr>
+                  <td>Suitable Materials</td>
+                  <td>{manufacturingProcesses[selectedProcess].materials}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+      <div className="comparison-section">
+        <h2>Process Comparison</h2>
+        <div className="comparison-table-container">
+          <table className="comparison-table">
+            <thead>
+              <tr>
+                <th>Process</th>
+                <th>Precision</th>
+                <th>Cost</th>
+                <th>Complexity</th>
+                <th>Material Efficiency</th>
+                <th>Production Volume</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Casting</td>
+                <td>Medium-High</td>
+                <td>Medium</td>
+                <td>High</td>
+                <td>Medium</td>
+                <td>Medium-High</td>
+              </tr>
+              <tr>
+                <td>CNC Machining</td>
+                <td>Very High</td>
+                <td>High</td>
+                <td>Medium</td>
+                <td>Low</td>
+                <td>Low-Medium</td>
+              </tr>
+              <tr>
+                <td>Forging</td>
+                <td>Medium</td>
+                <td>Medium-High</td>
+                <td>Low-Medium</td>
+                <td>Medium</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>3D Printing</td>
+                <td>High</td>
+                <td>High</td>
+                <td>Very High</td>
+                <td>High</td>
+                <td>Low</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ManufacturingPage;
