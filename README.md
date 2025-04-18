@@ -7,6 +7,7 @@
 This application aims to demystify complex prosthesis data through intuitive interfaces, 3D simulations, and real-time AI-driven recommendations, enabling a truly immersive and informative user journey.
 
 ---
+## Deployment Status https://hip-prothesis-research-website.vercel.app/
 
 ## 🎓 Educational Modules
 
